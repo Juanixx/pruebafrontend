@@ -1,0 +1,57 @@
+a{
+	color: #00F;
+}
+
+a:visited{
+color: #00D;
+}
+
+body{
+	background: white;
+	color: #333;
+	font-family: "Arial";
+	font-size: 16px;
+	text-align:left;
+}
+.cambia{
+height:80px;
+width:80;
+}
+
+
+header{
+background: #222;
+border-bottom:3px solid #0AF;
+color:#DDD;
+margin: 0;
+padding: 0.5em;/*el "em toma el valor más cercano de la fuente en pixeles, en éste caso esta tomando la fuente de 16 pixeles, por lo tanto el padding va a ser de 8 pixeles (0.5x16)"*/
+width: 100%;
+}
+
+header img{
+width: 100%;
+}
+
+
+header h1{
+font-size:20px;
+font-weight:normal;
+margin:0;
+padding:0;
+}
+
+/*Aquí se empieza a usar la herencia múltiple*/
+header #avatar,header #logo,header #titulo_nav{
+display: inline-block;
+vertical-align:top;
+
+}
+header #logo,header #avatar{
+height:40px;
+width:40px;
+}
+
+
+header #titulo_nav{
+width: 70%;
+}

@@ -1,0 +1,77 @@
+a {
+  color: #00f;
+}
+a:visited {
+  color: #00d;
+}
+body {
+  background: #fff;
+  color: #333;
+  font-family: "Arial";
+  font-size: 16px;
+  text-align: left;
+}
+header {
+  background: #222;
+  border-bottom: 3px solid #0af;
+  color: #ddd;
+  margin: 0;
+  padding: 0.5em; /*el "em toma el valor más cercano de la fuente en pixeles, en éste caso esta tomando la fuente de 16 pixeles, por lo tanto el padding va a ser de 8 pixeles (0.5x16)"*/
+  position:fixed;
+  width: 100%;
+}
+header img {
+  width: 100%;
+}
+header h1 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/*Aquí se empieza a usar la herencia múltiple*/
+header #avatar,header #logo,header #titulo_nav{
+display: inline-block;
+vertical-align: top;
+}
+
+header #logo,header #avatar{
+height:40px;
+width:40px;
+}
+
+header #avatar a{
+background: #444;
+display: block;/*Convierte al enlace en un bloque o caja*/
+margin:0;
+padding:3px;
+text-decoration: none;
+}
+
+header #titulo_nav{
+width: 60%;
+}
+
+header #titulo_nav nav a{
+color:white;
+border-bottom: 4px solid white;
+border-left: 1px solid white;
+border-right: 1px solid white;
+font-size:0.8em;
+padding: 0.1em 1em;
+text-decoration:none; 
+}
+
+header #titulo_nav nav a:hover{
+border-color:#0AF;
+}
+
+#contenido{
+padding-top: 6em;
+}
+	.item{
+	border: 2px solid #DDD;
+	border-radius: 0.5em;
+	margin: 0.5em 0 0 0;
+}
+
