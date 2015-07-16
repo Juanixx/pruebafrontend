@@ -34,8 +34,8 @@ header h1 {
 header #avatar,
 header #logo,
 header #titulo_nav {
-  //display: inline-block;
-  //vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 header #logo,
 header #avatar {
