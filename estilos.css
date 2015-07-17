@@ -15,10 +15,13 @@ header {
   background: #222;
   border-bottom: 3px solid #0af;
   color: #ddd;
-  margin: 0;
+  margin: 0;/*margen es lo de afuera y padding es lo de adentro*/
   padding: 0.5em; /*el "em toma el valor más cercano de la fuente en pixeles, en éste caso esta tomando la fuente de 16 pixeles, por lo tanto el padding va a ser de 8 pixeles (0.5x16)"*/
   position: fixed;
   width: 100%;
+}
+header #avatar,#contenido figure {
+float:right;
 }
 header img {
   width: 100%;
@@ -50,7 +53,7 @@ header #avatar a {
   text-decoration: none;
 }
 header #titulo_nav {
-  width: 60%;
+  width: 40%;
 }
 header #titulo_nav nav a {
   color: #fff;
@@ -67,45 +70,40 @@ header #titulo_nav nav a:hover {
 #contenido {
   padding-top: 6em;
 }
-	.item {
+#contenido .item {
   border: 2px solid #ddd;
   border-radius: 0.5em;
   margin: 0.5em 0 0 0;
   padding: 0.5em;
 }
 
-		h2{
+#contenido .item h2{
 		font-size:16px;
 		margin: 0;
 		padding:0;
 		}
 
-		.autor{
+#contenido .item .autor{
 		font-size:0.7em;
-		margin: -3em 0 0 15%;
+		margin: -7em 0 5em 15%;
 		}
-			p{
+#contenido .item .autor p{
 			display:inline;
+			margin:-3em 0 0 0:
 			}
-		.titulo_item,.votos{
+#contenido .item .titulo_item,.votos{
 		display:inline-block;
 		vertical-align:top;
 		}
 
-			figure{
+		/*figure{
 			float:right;
-			}
+			}*/
 
-		.titulo_item{
+#contenido .item .titulo_item{
 		width:80%;
 }
-		.votos{
+#contenido .item .votos{
 		text-align:center;
 		width:14%;
 		}
-
-
-
-
-
-
