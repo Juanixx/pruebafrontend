@@ -44,7 +44,7 @@ a:visited {
   color: #00d;
 }
 body {
-  background: #fff;
+  background: #CBF5F5;
   color: #333;
   font-family: "Open Sans",Arial;
   font-size: 16px;
@@ -110,6 +110,22 @@ header #titulo_nav nav a:hover {
 #contenido {
   padding-top: 6em;
 }
+#contenido #nota{
+	background:#FAFAD6;
+	border-radius:1em;
+	font-size:0.7em;
+	height:1em;
+	margin:1em;
+	overflow:hidden;
+	padding:2em;
+	text-align:justify;
+	transition:all 0.5s ease;
+}
+
+#contenido #nota:hover{
+height:6em;
+}
+
 #contenido .item {
   background:white;
   border: 2px solid #ddd;
@@ -131,7 +147,7 @@ header #titulo_nav nav a:hover {
 		}
 #contenido .item .autor p{
 			display:inline;
-			margin:-3em 0 0 0:
+			margin:-3em 0 0 0;
 			}
 
 #contenido .item .autor .icon-heart-broken{
@@ -195,10 +211,33 @@ color:#4B8FF5;
 }
 
 /*Es importante que el responsive siempre se encuntre al final*/
-//Aquí empieza el responsive
+/*Aquí empieza el responsive*/
 
-@media screen and (min-width:768){
-body{
-background:red;
+@media screen and (min-width:768px){
+#contenido
+	#nota{
+	float:right;
+	font-size:1em;
+	height:auto;
+	width:20%;
+	}
+	#nota:hover{
+	height:auto;
+		}
+	.item{
+		display:inline-block;
+		vertical-align:top;
+		width:30%;
+}
+}
+
+@media screen and (min-width:1280px){
+#contenido
+	.item{
+		width: 20%;
+	}
+		.titulo_item a{
+		font-size:0.9em;
+		font-weight:normal;
 }
 }
