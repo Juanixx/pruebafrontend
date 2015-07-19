@@ -66,7 +66,7 @@ header img {
   width: 100%;
 }
 header h1 {
-  font-family:"Nunito";
+  font-family:"Nunito",Arial;
   font-size: 20px;
   font-weight: normal;
   margin: 0;
@@ -111,9 +111,11 @@ header #titulo_nav nav a:hover {
   padding-top: 6em;
 }
 #contenido .item {
+  background:white;
   border: 2px solid #ddd;
   border-radius: 0.5em;
   margin: 0.5em 0 0 0;
+  overflow:hidden;
   padding: 0.5em;
 }
 
@@ -131,6 +133,34 @@ header #titulo_nav nav a:hover {
 			display:inline;
 			margin:-3em 0 0 0:
 			}
+
+#contenido .item .autor .icon-heart-broken{
+color:#f66;
+cursor:pointer;
+display:inline-block;
+font-size:1.3em;
+vertical-align:middle;
+}
+#contenido .item .autor .icon-heart-broken:hover:before{
+color:green;
+content: "\e600";
+}
+
+
+#contenido .item .autor .tag{
+background:#80CCB2;
+border-radius:0.5em;/*Se usa para bordes redondeadosi*/
+color:white;
+display:inline;
+font-weight:bold;
+padding:0.5em;
+margin: 0 0 2px 1em;
+}
+
+#contenido .item .autor .tag:hover{
+background:#589D86;
+}
+
 #contenido .item .titulo_item,.votos{
 		display:inline-block;
 		vertical-align:top;
@@ -147,3 +177,28 @@ header #titulo_nav nav a:hover {
 		text-align:center;
 		width:14%;
 		}
+
+#contenido .item .votos a{
+text-decoration:none;
+transition:all 1s ease;/*Se usa para las animaciones*/
+}
+#contenido .item .votos a:hover{
+font-size: 1.3em;
+}
+
+#contenido .item .votos .down{
+color: #FFb341;
+}
+
+#contenido .item .votos .up{
+color:#4B8FF5;
+}
+
+/*Es importante que el responsive siempre se encuntre al final*/
+//Aquí empieza el responsive
+
+@media screen and (min-width:768){
+body{
+background:red;
+}
+}
