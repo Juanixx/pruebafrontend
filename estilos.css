@@ -1,0 +1,243 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-im7zqn');
+	src:url('fonts/icomoon.eot?#iefix-im7zqn') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?-im7zqn') format('truetype'),
+		url('fonts/icomoon.woff?-im7zqn') format('woff'),
+		url('fonts/icomoon.svg?-im7zqn#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+	content: "\e600";
+}
+.icon-heart-broken:before {
+	content: "\e601";
+}
+.icon-arrow-up:before {
+	content: "\e602";
+}
+.icon-arrow-down:before {
+	content: "\e603";
+}
+
+
+a {
+  color: #00f;
+}
+a:visited {
+  color: #00d;
+}
+body {
+  background: #CBF5F5;
+  color: #333;
+  font-family: "Open Sans",Arial;
+  font-size: 16px;
+  text-align: left;
+}
+header {
+  background: #222;
+  border-bottom: 3px solid #0af;
+  color: #ddd;
+  margin: 0;/*margen es lo de afuera y padding es lo de adentro*/
+  padding: 0.5em; /*el "em toma el valor más cercano de la fuente en pixeles, en éste caso esta tomando la fuente de 16 pixeles, por lo tanto el padding va a ser de 8 pixeles (0.5x16)"*/
+  position: fixed;
+  width: 100%;
+}
+header #avatar,#contenido figure {
+float:right;
+}
+header img {
+  width: 100%;
+}
+header h1 {
+  font-family:"Nunito",Arial;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+/*Aquí se empieza a usar la herencia múltiple*/
+/*Aquí se controla la posición de las imágenes*/
+header #avatar,
+header #logo,
+header #titulo_nav {
+  display: inline-block;
+  vertical-align: top;
+}
+header #logo,
+header #avatar {
+  height: 40px;
+  width: 40px;
+}
+header #avatar a {
+  background: #444;
+  display: block; /*Convierte al enlace en un bloque o caja*/
+  margin: 0;
+  padding: 3px;
+  text-decoration: none;
+}
+header #titulo_nav {
+  width: 40%;
+}
+header #titulo_nav nav a {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  font-size: 0.8em;
+  padding: 0.1em 1em;
+  text-decoration: none;
+}
+header #titulo_nav nav a:hover {
+  border-color: #0af;
+}
+#contenido {
+  padding-top: 6em;
+}
+#contenido #nota{
+	background:#FAFAD6;
+	border-radius:1em;
+	font-size:0.7em;
+	height:1em;
+	margin:1em;
+	overflow:hidden;
+	padding:2em;
+	text-align:justify;
+	transition:all 0.5s ease;
+}
+
+#contenido #nota:hover{
+height:6em;
+}
+
+#contenido .item {
+  background:white;
+  border: 2px solid #ddd;
+  border-radius: 0.5em;
+  margin: 0.5em 0 0 0;
+  overflow:hidden;
+  padding: 0.5em;
+}
+
+#contenido .item h2{
+		font-size:16px;
+		margin: 0;
+		padding:0;
+		}
+
+#contenido .item .autor{
+		font-size:0.7em;
+		margin: -7em 0 5em 15%;
+		}
+#contenido .item .autor p{
+			display:inline;
+			margin:-3em 0 0 0;
+			}
+
+#contenido .item .autor .icon-heart-broken{
+color:#f66;
+cursor:pointer;
+display:inline-block;
+font-size:1.3em;
+vertical-align:middle;
+}
+#contenido .item .autor .icon-heart-broken:hover:before{
+color:green;
+content: "\e600";
+}
+
+
+#contenido .item .autor .tag{
+background:#80CCB2;
+border-radius:0.5em;/*Se usa para bordes redondeadosi*/
+color:white;
+display:inline;
+font-weight:bold;
+padding:0.5em;
+margin: 0 0 2px 1em;
+}
+
+#contenido .item .autor .tag:hover{
+background:#589D86;
+}
+
+#contenido .item .titulo_item,.votos{
+		display:inline-block;
+		vertical-align:top;
+		}
+
+		/*figure{
+			float:right;
+			}*/
+
+#contenido .item .titulo_item{
+		width:80%;
+}
+#contenido .item .votos{
+		text-align:center;
+		width:14%;
+		}
+
+#contenido .item .votos a{
+text-decoration:none;
+transition:all 1s ease;/*Se usa para las animaciones*/
+}
+#contenido .item .votos a:hover{
+font-size: 1.3em;
+}
+
+#contenido .item .votos .down{
+color: #FFb341;
+}
+
+#contenido .item .votos .up{
+color:#4B8FF5;
+}
+
+/*Es importante que el responsive siempre se encuntre al final*/
+/*Aquí empieza el responsive*/
+
+@media screen and (min-width:768px){
+#contenido
+	#nota{
+	float:right;
+	font-size:1em;
+	height:auto;
+	width:20%;
+	}
+	#nota:hover{
+	height:auto;
+		}
+	.item{
+		display:inline-block;
+		vertical-align:top;
+		width:30%;
+}
+}
+
+@media screen and (min-width:1280px){
+#contenido
+	.item{
+		width: 20%;
+	}
+		.titulo_item a{
+		font-size:0.9em;
+		font-weight:normal;
+}
+}
